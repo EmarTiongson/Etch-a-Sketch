@@ -42,8 +42,31 @@ div.squares {
 }
 
 .reset,
-.random,
 .numOfSquares {
   padding: 10px;
   font-size: 28px;
+}
+
+.toggle-wrapper {
+  display: inline-block;
+  position: relative;
+}
+.toggle-wrapper input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.toggle-wrapper label {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+}
+.toggle-wrapper input:checked + label {
+  background-color: green;
+  color: white;
 }
